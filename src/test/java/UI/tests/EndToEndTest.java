@@ -25,10 +25,14 @@ public class EndToEndTest extends BaseTest {
    */
   @BeforeAll
   static void setUp() {
+    LOGGER.info("=== Подготовка к тестам ===");
+
     indexPageService = new IndexPageService();
     productPageService = new ProductPageService();
     cartPageService = new CartPageService();
     placeOrderPageService = new PlaceOrderPageService();
+
+    LOGGER.info("=== Генерация тестовых данных ===");
 
     user = Instancio.of(User.class)
             .generate(Select.field(User::getUsername), Generators::string)
@@ -37,7 +41,13 @@ public class EndToEndTest extends BaseTest {
             .generate(Select.field(User::getCreditCard), Generators::string)
             .create();
 
+    LOGGER.info("Username: {}", user.getUsername());
+    LOGGER.info("Password: {}", user.getPassword());
+
+    LOGGER.info("=== Регистрация пользователя с текущими данными ===");
     indexPageService.signUp(user);
+
+    LOGGER.info("=== Авторизация пользователя для дальнейшей работы с сайтом ===");
     indexPageService.signIn(user);
   }
 
@@ -50,6 +60,8 @@ public class EndToEndTest extends BaseTest {
   @DisplayName("Добавление товара в корзину и сравнение цен по отдельности")
   @Order(1)
   public void addToCartAndCheckPriceTest() {
+    LOGGER.info("=== Старт теста: Добавление товара в корзину и сравнение цен по отдельности ===");
+
     int categoryListSize = indexPageService.getCategorySize();
 
     for(int i = 1; i < categoryListSize; i++) {
@@ -65,23 +77,33 @@ public class EndToEndTest extends BaseTest {
 
       productPageService.addProductToCartAndReturnHome();
     }
+
+    LOGGER.info("=== Завершение теста: Добавление товара в корзину и сравнение цен по отдельности ===");
   }
 
   @Test
   @DisplayName("Вход в корзину и проверка общей цены")
   @Order(2)
   public void totalCartPriceTest() {
+    LOGGER.info("=== Старт теста: Вход в корзину и проверка общей цены ===");
+
     indexPageService.enterToCart();
     Assertions.assertTrue(cartPageService.compareTotalPrice(),
             "Сумма цен отдельно и показатель Total не совпадают");
+
+    LOGGER.info("=== Завершение теста: Вход в корзину и проверка общей цены ===");
   }
 
   @Test
   @DisplayName("Завершение заказа и проверка даты")
   @Order(3)
   public void confirmOrderAndCheckDateTest() {
+    LOGGER.info("=== Старт теста: Завершение заказа и проверка даты ===");
+
     cartPageService.placeOrder();
     Assertions.assertTrue(placeOrderPageService.confirmOrderAndCheckDate(user),
             "Даты не совпадают");
+
+    LOGGER.info("=== Завершение теста: Завершение заказа и проверка даты ===");
   }
 }

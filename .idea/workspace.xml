@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26cddcf8-4237-4a7f-bb1e-087651dc4e44" name="Changes" comment="Выполнены все задания" />
+    <list default="true" id="26cddcf8-4237-4a7f-bb1e-087651dc4e44" name="Changes" comment="Выполнены все задания">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vadim/home/services/CartPageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vadim/home/services/CartPageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vadim/home/services/PlaceOrderPageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vadim/home/services/PlaceOrderPageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UI/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UI/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UI/tests/EndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UI/tests/EndToEndTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="XML Properties File" />
       </list>
     </option>
   </component>
@@ -29,15 +38,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Programming/SauceDemo&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "last_opened_file_path": "F:/Programming/SauceDemo",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="JUnit.EndToEndTest">
     <configuration name="EndToEndTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestTaskJavaAQA" />
@@ -137,7 +149,8 @@
       <workItem from="1728564876708" duration="15952000" />
       <workItem from="1728623142500" duration="21980000" />
       <workItem from="1728654903404" duration="9184000" />
-      <workItem from="1728665960989" duration="22358000" />
+      <workItem from="1728665960989" duration="22544000" />
+      <workItem from="1728720849283" duration="3795000" />
     </task>
     <task id="LOCAL-00001" summary="Выполнены все задания">
       <created>1728692326433</created>
@@ -146,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728692326433</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Выполнены все задания">
+      <created>1728692478255</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728692478255</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

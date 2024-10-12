@@ -17,6 +17,11 @@ public class CartPageService {
       sum += Integer.parseInt(cartPage.getProductPriceText(i));
     }
 
+    try {
+      Thread.sleep(500);
+    } catch (InterruptedException e) {
+      throw new RuntimeException(e);
+    }
     return sum == Integer.parseInt(cartPage.getTotalPriceText());
   }
 
