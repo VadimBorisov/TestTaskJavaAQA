@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26cddcf8-4237-4a7f-bb1e-087651dc4e44" name="Changes" comment="Выполнены все задания">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="26cddcf8-4237-4a7f-bb1e-087651dc4e44" name="Changes" comment="Выполнены все задания" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,8 +137,16 @@
       <workItem from="1728564876708" duration="15952000" />
       <workItem from="1728623142500" duration="21980000" />
       <workItem from="1728654903404" duration="9184000" />
-      <workItem from="1728665960989" duration="22058000" />
+      <workItem from="1728665960989" duration="22358000" />
     </task>
+    <task id="LOCAL-00001" summary="Выполнены все задания">
+      <created>1728692326433</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728692326433</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
